@@ -1,0 +1,79 @@
+.root {
+    -fx-background-image: url("jivehive_taust.jpg");
+}
+
+
+/*https://stackoverflow.com/questions/21936585/transparent-background-of-a-textarea-in-javafx-8*/
+.text-area {
+    -fx-background-color: rgba(255,255,255,0.8);
+    -fx-padding: 5;
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.label {
+    -fx-background-color: rgba(249, 224, 67, 1);
+    -fx-background-radius: 20;
+    -fx-background-insets: -2 -2 -2 -2;
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.button {
+    /*kasutasin näidet siit lehelt: http://fxexperience.com/2011/12/styling-fx-buttons-with-css/*/
+    -fx-background-color: linear-gradient(#ffd65b, #e68400),
+    linear-gradient(#ffef84, #f2ba44),
+    linear-gradient(#ffea6a, #efaa22),
+    linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+    linear-gradient(from 0% 0% to 15% 50%, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0, 1, 2, 3, 0;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-padding: 10 20 10 20;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#ffe05b, #eb8900),
+    linear-gradient(#fff97d, #f8c047),
+    linear-gradient(#fff86b, #f6b122),
+    linear-gradient(#fff557 0%, #ffc902 50%, #f9ab0b 100%),
+    linear-gradient(from 0% 0% to 15% 50%, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0, 1, 2, 3, 0;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-padding: 10 20 10 20;
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(#e68400, #ffd65b),
+    linear-gradient(#f2ba44, #ffef84),
+    linear-gradient(#efaa22, #ffea6a),
+    linear-gradient(#eea10b 0%, #f8c202 50%, #ffe657 100%),
+    linear-gradient(from 0% 0% to 15% 50%, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0, 1, 2, 3, 0;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-padding: 10 20 10 20;
+}
+
