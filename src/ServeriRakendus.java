@@ -79,7 +79,7 @@ public class ServeriRakendus implements ServeriLiides {
     public void lahku(String kasutajanimi) throws RemoteException {
         kasutajateLogid.remove(kasutajanimi);
         kasutajateList.remove(kasutajanimi);
-        kirjutaTeade(kasutajanimi + " lahkus toast.");
+        kirjutaTeade("\\*Kasutaja " + kasutajanimi + " lahkus toast*/");
     }
 
     @Override
