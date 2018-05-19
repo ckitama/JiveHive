@@ -10,6 +10,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
+
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.Registry;
@@ -229,7 +230,7 @@ public class JiveHive extends Application {
                                 vestlusSiiamaani.append("\n\\*ühenduse katkestus*/\n\n");
                                 stub = (ServeriLiides) registry.lookup("ServeriRakendus");
                                 stub.lahkuAjutiselt(kasutajanimi);
-                                stub.siseneUuesti(kasutajanimi,vestlusSiiamaani);
+                                stub.siseneUuesti(kasutajanimi, vestlusSiiamaani);
                                 break;
                             } catch (RemoteException e1) {
                                 throw new RuntimeException("Serveriga ühenduse loomine ebaõnnestus");
